@@ -7,6 +7,47 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.feature p{
+  font-size: 15px;
+}
+
+.container{
+  padding-top: 20px;
+  padding-bottom:50px;
+}
+
+.grid{
+  grid-gap: 50px;
+}
+
+.flex{
+  display: flex;
+}
+
+.alignItemCenter{
+  align-items: flex-end;
+}
+
+.justify{
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header nav a{
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
 /*
 banner image
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
@@ -26,7 +67,11 @@ For banner over lay add this class to your div
 </div>
 */
 .banner__container {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
   position: relative;
+  background-size: cover;
+  height: 400px;
+  padding:50px 0;
 }
 
 .banner__container:before {
@@ -37,4 +82,108 @@ For banner over lay add this class to your div
   bottom: 0;
   background-color: rgba(0,0,0,0.4);
   content: "";
+}
+
+.banner-info{
+  margin: 100px;
+  margin-left: 400px;
+  position: absolute;
+  
+}
+
+.top-info{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.icon{
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.icon-1{
+  background-color: white;
+  border: 1px solid rgb(228, 224, 224);
+}
+.icon-2{
+  background-color: white;
+  border: 1px solid rgb(228, 224, 224);
+}
+
+.icon-1 h3{
+  background-color: rgb(241, 239, 239);
+  padding:20px;
+}
+.icon-2 h3{
+  background-color: rgb(241, 239, 239);
+  padding:20px;
+}
+
+
+.icon div{
+  margin: 20px;
+}
+
+.img-1{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  width: 315px;
+  height: 210px;
+}
+
+.img-2{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  width: 315px;
+  height: 210px;
+}
+
+.img-3{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  width: 315px;
+  height: 210px;
+}
+
+.feature h2{
+  font-size: 30px;
+}
+.feature p{
+  font-weight: bold;
+}
+
+.feature-info{
+  color: white;
+  padding-top: 80px;
+  font-weight: bold;
+}
+.feature-info div:first-child{
+  font-size: 20px;
+}
+
+.img-text{
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid rgb(228, 224, 224);
+  background-color: rgb(241, 239, 239);
+}
+
+button{
+  margin: 0;
+  font-weight: bold;
+  background-color:#f34e42;
+  font-weight: bold;
+  color: white;
+  padding: 13px 100px;
+  border: none;
+  border-radius: 3%;
+  border-bottom: rgb(150, 68, 68);
+}
+
+.btn{
+  padding: 50px;
+}
+
+footer{
+  background-color: rgb(48, 45, 45);
+  color: white;
+  padding: 50px;
 }
