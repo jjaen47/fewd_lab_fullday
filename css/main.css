@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+main{
+  background-color: rgb(231, 231, 231);
+}
+
 .feature p{
   font-size: 15px;
 }
@@ -48,24 +52,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-size: 15px;
 }
-/*
-banner image
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
-
-
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg
-
-*/
-/**
-For banner over lay add this class to your div
-<div class="banner__container">
-  <div>
-      <!-- content goes here -->
-  </div>
-</div>
-*/
 .banner__container {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
   position: relative;
@@ -97,6 +83,9 @@ For banner over lay add this class to your div
   color: white;
   text-align: center;
 }
+.top-info h2{
+  font-size: 50px;
+}
 .icon{
   padding-top: 40px;
   padding-bottom: 70px;
@@ -105,20 +94,11 @@ For banner over lay add this class to your div
   background-color: white;
   border: 1px solid rgb(228, 224, 224);
 }
-.icon-2{
-  background-color: white;
-  border: 1px solid rgb(228, 224, 224);
-}
 
-.icon-1 h3{
+.icon-info{
   background-color: rgb(241, 239, 239);
   padding:20px;
 }
-.icon-2 h3{
-  background-color: rgb(241, 239, 239);
-  padding:20px;
-}
-
 
 .icon div{
   margin: 20px;
@@ -143,6 +123,7 @@ For banner over lay add this class to your div
 }
 
 .feature h2{
+  padding-top: 50px;
   font-size: 30px;
 }
 .feature p{
@@ -150,18 +131,25 @@ For banner over lay add this class to your div
 }
 
 .feature-info{
+  position: absolute;
+  text-align: center;
   color: white;
   padding-top: 80px;
   font-weight: bold;
+  margin-left: 50px;
+}
+.feature-info-2{
+  margin-left: 80px;
 }
 .feature-info div:first-child{
   font-size: 20px;
+  padding-bottom: 5px;
 }
 
 .img-text{
   font-weight: bold;
   padding-top: 20px;
-  padding-bottom: 20px;
+  min-height: 50px;
   border: 1px solid rgb(228, 224, 224);
   background-color: rgb(241, 239, 239);
 }
@@ -169,13 +157,13 @@ For banner over lay add this class to your div
 button{
   margin: 0;
   font-weight: bold;
-  background-color:#f34e42;
+  background-color:#ff5e52;
   font-weight: bold;
   color: white;
   padding: 13px 100px;
   border: none;
   border-radius: 3%;
-  border-bottom: rgb(150, 68, 68);
+  border-bottom: 5px solid rgb(240, 45, 45);
 }
 
 .btn{
@@ -184,6 +172,13 @@ button{
 
 footer{
   background-color: rgb(48, 45, 45);
-  color: white;
+  color: rgb(219, 216, 216);
   padding: 50px;
+  font-weight: bold;
+}
+
+.footer-line{
+  width: 100%;
+  border-top: 3px solid rgb(124, 122, 122);
+  padding-top: 20px;
 }
